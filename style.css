@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#game-name {
+  font-size: 2em;
+  margin: 0;
+}
+
+button {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  margin: 5px;
+}
+
+#game-area {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#color-picker {
+  margin-bottom: 20px;
+}
+
+.color-btn {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+#bottle-container {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 400px;
+  background-color: #eee;
+  border: 2px solid #333;
+}
+
+#score-container {
+  margin-top: 20px;
+}
+
+#settings-panel {
+  display: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#adsense-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ddd;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #game-area {
+    flex-direction: column;
+  }
+  #color-picker {
+    display: flex;
+    justify-content: center;
+  }
+}
