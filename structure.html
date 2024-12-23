@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bottle Filling Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="game-container">
+    <header>
+      <h1 id="game-name">Bottle Filling Game</h1>
+      <button id="settings-button">Settings</button>
+    </header>
+
+    <div id="game-area">
+      <div id="color-picker">
+        <button class="color-btn" style="background-color: red;" data-color="red"></button>
+        <button class="color-btn" style="background-color: blue;" data-color="blue"></button>
+        <button class="color-btn" style="background-color: green;" data-color="green"></button>
+        <button class="color-btn" style="background-color: yellow;" data-color="yellow"></button>
+      </div>
+
+      <div id="bottle-container">
+        <canvas id="bottle-canvas"></canvas>
+      </div>
+
+      <div id="score-container">
+        <p>Score: <span id="score">0</span></p>
+        <p>Level: <span id="level">1</span></p>
+      </div>
+    </div>
+
+    <!-- Settings Panel -->
+    <div id="settings-panel">
+      <h2>Game Settings</h2>
+      <label for="game-name-input">Game Name:</label>
+      <input type="text" id="game-name-input" placeholder="Enter Game Name">
+      <label for="bg-color-picker">Background Color:</label>
+      <input type="color" id="bg-color-picker">
+      <button id="apply-settings">Apply Settings</button>
+    </div>
+
+    <div id="ad-space">
+      <div id="adsense-container">
+        <!-- Example ad space -->
+        <p>Ad space (AdSense Integration)</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
